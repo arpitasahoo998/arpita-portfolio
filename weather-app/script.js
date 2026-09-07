@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // UI Elements
     const cityNameEl = document.getElementById('cityName');
+    const localTimeEl = document.getElementById('localTime');
     const currentTempEl = document.getElementById('currentTemp');
     const weatherDescEl = document.getElementById('weatherDesc');
     const highTempEl = document.getElementById('highTemp');
@@ -129,6 +130,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Header
+        const timeParts = current.time.split('T')[1].split(':'); // e.g. "14:15" -> ["14", "15"]
+        let hour = parseInt(timeParts[0]);
+        const ampm = hour >= 12 ? 'PM' : 'AM';
+        hour = hour % 12 || 12; // convert to 12-hour format
+        localTimeEl.textContent = `${hour}:${timeParts[1]} ${ampm}`;
+
         currentTempEl.innerHTML = `${Math.round(current.temperature_2m)}&deg;`;
         weatherDescEl.textContent = details.desc;
         highTempEl.innerHTML = `H:${Math.round(daily.temperature_2m_max[0])}&deg;`;
