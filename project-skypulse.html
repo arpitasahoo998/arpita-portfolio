@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyPulse Weather App | Arpita Sahoo</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="profile">
+        <h1>Arpita Sahoo</h1>
+        <p>AI Engineer & Full Stack Developer</p>
+      </div>
+      <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+      <div class="socials">
+        <a href="https://github.com/arpitasahoo998" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/arpitasahoo3763" target="_blank">LinkedIn</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <a href="index.html#projects" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; margin-bottom: 2rem; display: inline-block;">← Back to projects</a>
+      <section class="project-details">
+        <h2 style="margin-bottom: 1rem; color: var(--text-primary);">SkyPulse: Real-Time Weather Application</h2>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;">A modern, interactive weather application featuring dynamic glassmorphism theming, live 5-day forecasts, and intelligent location geocoding.</p>
+        
+        <div style="margin-bottom: 3rem;">
+          <a href="https://github.com/arpitasahoo998/weather-app" target="_blank" class="btn primary">View on GitHub ↗</a>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Challenge</h3>
+          <p style="color: var(--text-secondary);">Creating a visually stunning and highly responsive weather application that not only displays accurate real-time data but also provides an exceptional user experience through intelligent search and dynamic theming.</p>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Solution</h3>
+          <p style="color: var(--text-secondary);">Built a lightning-fast React application using Vite. Integrated the Open-Meteo API for real-time weather and forecasting without API keys, and implemented a custom debounced auto-complete search to accurately resolve city names to geographical coordinates.</p>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Architecture Highlights</h3>
+          <ul class="project-bullets">
+            <li><strong>Dynamic Theming:</strong> The application automatically shifts its CSS gradient background based on current weather conditions (e.g., sunny, night, rainy).</li>
+            <li><strong>Intelligent Geocoding:</strong> Implemented a debounced search dropdown that hits a geocoding API to let users pick precise locations globally.</li>
+            <li><strong>Premium UI/UX:</strong> Utilized glassmorphism design principles with custom scrollbars, micro-animations, and responsive layouts.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Technologies</h3>
+          <p style="color: var(--text-secondary);">React, Vite, JavaScript, HTML5, Vanilla CSS, Axios, Open-Meteo API</p>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Outcome</h3>
+          <ul class="project-bullets">
+            <li>Delivered a highly performant and visually striking frontend application.</li>
+            <li>Solved common API ambiguities (like duplicate city names) through an intuitive auto-complete search interface.</li>
+            <li>Deployed seamlessly using modern web architecture and automated pipelines.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer-bottom">
+        <p class="copyright">2026 Arpita Sahoo - AI Engineer & Full Stack Developer - Odisha, India</p>
+        <div class="footer-links">
+          <a href="https://github.com/arpitasahoo998" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/arpitasahoo3763" target="_blank">LinkedIn</a>
+          <a href="mailto:arpitasahoo998@gmail.com">Contact Me</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
