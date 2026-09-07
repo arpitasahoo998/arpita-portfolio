@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "description": "Static Portfolio",
   "scripts": {
-    "build": "mkdir -p dist && cp index.html style.css script.js resume.html project-*.html dist/ 2>/dev/null || true"
+    "build": "mkdir -p dist && cp index.html style.css script.js resume.html project-*.html *.pdf dist/ 2>/dev/null || true"
   }
 }
